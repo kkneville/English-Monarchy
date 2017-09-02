@@ -4,88 +4,108 @@
   <meta charset="utf-8">
   <title></title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="./monarchs.js"></script>
   <link rel="stylesheet" href="./monarchs.css">
 
-<script>
-$(document).ready(function(){
-
-  $('.monarch').hide();
-  $('.bio').hide();
-
-
-  $('.dynastylist').click(function() {
-    if( $(this).children('.monarch').is(":hidden") ) {
-        $(this).children('.monarch').show();
-    }
-    else
-    {
-      $(this).children('.monarch').hide();
-    }
-  });
-});
-</script>
-
-<script>
-
-$(document).ready(function(){
-  $('button').hover(function(){
-    $(this).css('background-color', '#1b599b');
-  }, function(){
-    $(this).css('background-color', '#10365e');
-  });
-});
-</script>
-
-
-<script>
-
-$(document).ready(function(){
-  $('#alfred').click(function() {
-    if( $("#alfredthegreat").is(":hidden") ) {
-      $("#alfredthegreat").show();
-    }
-    else
-    {
-      $("#alfredthegreat").hide();
-    }
-  });
-});
-</script>
 </head>
 <body>
 
+<div class="left">
+</div>
+
+<div id="center">
   <h1>The British Monarchy</h1>
   <div class="dynastylist" id="wessex">
     <button type="button" class="dynasty">House of Wessex</button>
-    <p class="monarch" id="egbert"> <a href="#">Egbert</a></p>
-    <p class="monarch"> <a href="#">Aethelwulf</a></p>
-    <p class="monarch"> <a href="#">Aethelbald</a></p>
-    <p class="monarch"> <a href="#">Aethelberht</a></p>
-    <p class="monarch"> <a href="#">Aethelred I</a></p>
-    <p class="monarch">
-      <a href="#" id="alfred">Alfred the Great</a>
-      <span class='bio' id="alfredthegreat">Stuff about alfred.</span>
-    </p>
-    <p class="monarch"> <a href="#">Edward the Elder</a></p>
-    <p class="monarch"> <a href="#">Athelstan</a></p>
-    <p class="monarch"> <a href="#">Edmund the Magnificent</a></p>
-    <p class="monarch"> <a href="#">Eadred</a></p>
-    <p class="monarch"> <a href="#">Eadwig All-Fair</a></p>
-    <p class="monarch"> <a href="#">Edgar the Peaceable</a></p>
-    <p class="monarch"> <a href="#">Aethelred II (Ethelred the Unready)</a></p>
-    <p class="monarch"> <a href="#">Edmund II</a></p>
+
+    <div class="monarch_unit">
+      <p class="monarch"> <a href="#">EGBERT 827 – 839</a></p>
+      <p class="bio">Egbert (Ecgherht) was the first monarch to establish a stable and extensive rule over all of Anglo-Saxon England. After returning from exile at the court of Charlemagne in 802, he regained his kingdom of Wessex. Following his conquest of Mercia in 827, he controlled all of England south of the Humber. After further victories in Northumberland and North Wales, he is recognised by the title Bretwalda (Anglo-Saxon, “ruler of the British”. A year before he died aged almost 70, he defeated a combined force of Danes and Cornish at Hingston Down in Cornwall. He is buried at Winchester in Hampshire.</p></div>
+
+    <div class="monarch_unit">
+      <p class="monarch"> <a href="#">AETHELWULF 839-856</a></p>
+      <p class="bio">King of Wessex, son of Egbert and father of Alfred the Great. In 851 Aethelwulf defeated a Danish army at the battle of Oakley while his eldest son Althelstan fought and beat the Danes at sea off the coast of Kent, in what is believed to be the first naval battle. A highly religious man, Athelwulf travelled to Rome with his son Alfred to see the Pope in 855.</p></div>
+
+    <div class="monarch_unit">
+      <p class="monarch"> <a href="#">AETHELBALD 856 – 860</a></p>
+      <p class="bio">The eldest son of Aethelwulf, Æthelbald was born around 834. He was crowned at Kingston-upon-Thames in southwest London, after forcing his father to abdicate upon his return from pilgrimage to Rome. Following his father’s death in 858, he married his widowed stepmother Judith, but under pressure from the church the marriage was annulled after only a year. He is buried at Sherbourne Abbey in Dorset.</p></div>
+
+    <div class="monarch_unit">
+      <p class="monarch"> <a href="#">AETHELBERT 860 – 866 </a></p>
+      <p class="bio"> Became king following the death of his brother Æthelbald. Like his brother and his father, Aethelbert (pictured to the right) was crowned at Kingston-upon-Thames. Shortly after his succession a Danish army landed and sacked Winchester before being defeated by the Saxons. In 865 the Viking Great Heathen Army landed in East Anglia and swept across England. He is buried at Sherborne Abbey.</p></div>
+
+    <div class="monarch_unit">
+      <p class="monarch"><a href="#">AETHELRED I 866 – 871 </a></p>
+      <p class="bio">Aethelred succeeded his brother Aethelbert. His reign was one long struggle with the Danes who had occupied York in 866, establishing the Viking kingdom of Yorvik. When the Danish Army moved south Wessex itself was threatened, and so together with his brother Alfred, they fought several battles with the Vikings at Reading, Ashdown and Basing. Aethelred suffered serious injuries during the next major battle at Meretun in Hampshire; he died of his wounds shortly after at Witchampton in Dorset, where he was buried.</p></div>
+
+    <div class="monarch_unit">
+      <p class="monarch"><a href="#" id="alfred">ALFRED THE GREAT 871 – 899</a>
+      <p class="bio">Born at Wantage in Berkshire around 849, Alfred was well educated and is said to have visited Rome on two occasions. He had proven himself to be a strong leader in many battles, and as a wise ruler managed to secure five uneasy years of peace with the Danes, before they attacked Wessex again in 877. Alfred was forced to retreat to a small island in the Somerset Levels and it was from here that he masterminded his comeback, perhaps ‘burning the cakes‘ as a consequence. With major victories at Edington, Rochester and London, Alfred established Saxon Christian rule over first Wessex, and then on to most of England. To secure his hard won boundaries Alfred founded a permanent army and an embryonic Royal Navy. To secure his place in history, he began the Anglo-Saxon Chronicles.</p></div>
+
+  <div class="monarch_unit">
+    <p class="monarch"> <a href="#">EDWARD (The Elder) 899 – 924</a></p>
+    <p class="bio">Succeeded his father Alfred the Great. Edward retook southeast England and the Midlands from the Danes. Following the the death of his sister Aethelflaed of Mercia, Edward unites the kingdoms of Wessex and Mercia. In 923, the Anglo-Saxon Chronicles record that the Scottish King Constantine II recognises Edward as “father and lord”. The following year, Edward is killed in a battle against the Welsh near Chester. His body is returned to Winchester for burial.</p></div>
+
+  <div class="monarch_unit">
+    <p class="monarch"> <a href="#">ATHELSTAN 924 – 939</a></p>
+    <p class="bio">Son of Edward the Elder, Athelstan extended the boundaries of his kingdom at the Battle of Brunanburh in 937. In what is said to be one of the bloodiest battles ever fought on British soil, Athelstan defeated a combined army of Scots, Celts, Danes and Vikings, claiming the title of King of all Britain. The battle saw for the first time individual Anglo-Saxon kingdoms being brought together to create a single and unified England. Athelstan is buried in Malmesbury, Wiltshire.</p></div>
+
+
+  <div class="monarch_unit">
+    <p class="monarch"> <a href="#">EDMUND 939 – 946</a></p>
+    <p class="bio">Succeeded his half-bother Athelastan as king at the tender age of 18, having already fought alongside him at the Batlle of Brunanburh two years earlier. He re-established Anglo-Saxon control over northern England, which had fallen back under Scandinavian rule following the death of Athelstan. Aged just 25, and whilst celebrating the feast of Augustine, Edmund was stabbed by a robber in his royal hall at Pucklechurch near Bath. His two sons, Eadwig and Edgar, were perhaps considered too young to become kings.</p></div>
+
+  <div class="monarch_unit">
+    <p class="monarch"> <a href="#">EADRED 946 – 955</a></p>
+    <p class="bio">The son of Edward the Elder by his third marriage to Eadgifu, Eadred succeeded his brother Edmund following his premature death. He followed in the family tradition of defeating Norsemen, expelling the last Scandinavian King of York, Eric Bloodaxe, in 954. A deeply religious man, Eadred suffered a serious stomach ailment that would eventually prove fatal. Eadred died in his early 30s, unmarried and without an heir, at Frome in Somerset. He is buried in Winchester.</p></div>
+
+  <div class="monarch_unit">
+    <p class="monarch"> <a href="#">EADWIG 955 – 959</a></p>
+    <p class="bio">The eldest son of Edmund I, Eadwig was about 16 when he was crowned king at Kingston-upon-Thames in southeast London. Legend has it that his coronation had to be delayed to allow Bishop Dunstan to prise Eadwig from his bed, and from between the arms of his “strumpet” and the strumpets’ mother. Perhaps unimpressed by the interruption, Eadwig had Dunstan exiled to France. Eadwig died in Gloucester when he was just 20, the circumstances of his death are not recorded.</p></div>
+
+  <div class="monarch_unit">
+    <p class="monarch"> <a href="#">EDGAR 959 – 975</a></p>
+    <p class="bio">The youngest son of Edmund I, Edgar had been in dispute with his brother concerning succession to the throne for some years. Following Eadwig’s mysterious death, Edgar immediately recalled Dunstan from exile, making him Archbishop of Canterbury as well as his personal adviser. Following his carefully planned (by Dunstan) coronation in Bath in 973, Edgar marched his army to Chester, to be met by six kings of Britain. The kings, including the King of Scots, King of Strathclyde and various princes of Wales, are said to have signalled their allegiance to Edgar by rowing him in his state barge across the River Dee.</p></div>
+
+  <div class="monarch_unit">
+    <p class="monarch"> <a href="#">EDWARD THE MARTYR 975 – 978</a></p>
+    <p class="bio">Eldest son of Edgar, Edward was crowned king when aged just 12. Although supported by Archbishop Dunstan, his claim to the throne was contested by supporters of his much younger half-brother Aethelred. The resulting dispute between rival factions within the church and nobility almost led to civil war in England. Edward’s short reign ended when he was murdered at Corfe Castle by followers of Aethelred, after just two and half years as king. The title ‘martyr’ was a consequence of him being seen as a victim of his stepmother’s ambitions for her own son Aethelred.</p></div>
+
+  <div class="monarch_unit">
+    <p class="monarch"> <a href="#">AETHELRED II THE UNREADY 978 – 1016</a></p>
+    <p class="bio">Aethelred was unable to organise resistance against the Danes, earning him the nickname ‘unready’, or ‘badly advised’. He became king aged about 10, but fled to Normandy in 1013 when Sweyn Forkbeard, King of the Danes invaded England. Sweyn was pronounced King of England on Christmas Day 1013 and made his capital at Gainsborough, Lincolnshire. He died just 5 weeks later. Aethelred returned in 1014 after Sweyn’s death. The remainder of Aethelred’s reign was one of a constant state of war with Sweyn’s son Canute.</p></div>
+
+  <div class="monarch_unit">
+    <p class="monarch"> <a href="#">EDMUND II IRONSIDE 1016 – 1016</a></p>
+    <p class="bio">The son of Aethelred II, Edmund had led the resistance to Canute’s invasion of England since 1015. Following the death of his father, he was chosen king by the good folk of London. The Witan (the king’s council) however elected Canute. Following his defeat at the Battle of Assandun, Aethelred made a pact with Canute to divide the kingdom between them. Edmund died later that year, probably assassinated.</p></div>
   </div>
 
-  <div class="dynastylist"  id="danish">
-    <button type="button" class="dynasty">Danish</button>
-    <p class="monarch"> <a href="#">Svein Forkbeard</a></p>
-    <p class="monarch"> <a href="#">Cnut</a></p>
-    <p class="monarch"> <a href="#">Harold I</a></p>
-    <p class="monarch"> <a href="#">Hardicnut</a></p>
-  </div>
+<div class="dynastylist"  id="danish">
+<button type="button" class="dynasty">Danish</button>
 
-  <div class="dynastylist"   id="saxons">
-    <button type="button" class="dynasty">Saxons</button>
+  <div class="monarch_unit">
+    <p class="monarch"> <a href="#">SVEIN FORKBEARD</a></p>
+    <p class="bio">In 1013 when Sweyn Forkbeard, King of the Danes invaded England. Sweyn was pronounced King of England on Christmas Day 1013 and made his capital at Gainsborough, Lincolnshire. He died just 5 weeks later. Aethelred returned in 1014 after Sweyn’s death. The remainder of Aethelred’s reign was one of a constant state of war with Sweyn’s son Canute.</p></div>
+
+  <div class="monarch_unit">
+    <p class="monarch"> <a href="#">CNUT THE GREAT 1016 – 1035</a></p>
+    <p class="bio">
+    Canute became king of all England following the death of Edmund II. The son of Sweyn Forkbeard, he ruled well and gained favour with his English subjects by sending most of his army back to Denmark. In 1017, Canute married Emma of Normandy, the widow of Aethelred II and divided England into the four earldoms of East Anglia, Mercia, Northumbria and Wessex. Perhaps inspired by his pilgrimage to Rome in 1027, legend has it that he wanted to demonstrate to his subjects that as a king he was not a god, he ordered the tide not to come in, knowing this would fail.</p></div>
+
+
+  <div class="monarch_unit">
+    <p class="monarch"> <a href="#">HAROLD I 1035 – 1040</a></p>
+    <p class="bio">Also known as Harold Harefoot, in recognition of his speed and skill as a hunter. Harold was the illegitimate son of Canute, he claimed the English crown on the death of his father whilst his half-brother Harthacanute, the rightful heir, was in Denmark fighting to protect his Danish kingdom. Harold died three years into his reign, just weeks before Harthacanute was due to invade England with an army of Danes. He was buried in Westminster Abbey before Harthacanute had his body dug up, beheaded, and thrown into the Thames. His bits were later gathered and re-buried at St. Clement Danes in London.</p></div>
+
+  <div class="monarch_unit">
+    <p class="monarch"> <a href="#">HARDICNUT 1040 – 1042</a></p>
+    <p class="bio">The son of Cnut the Great and Emma of Normandy, Harthacanute sailed to England with his mother, accompanied by a fleet of 62 warships, and was immediately accepted as king. Perhaps to appease his mother, the year before he died Harthacanute invited his half-brother Edward, Emma’s son from her first marriage to Aethelred the Unready, back from exile in Normandy. Harthacanute died at a wedding whilst toasting the health of the bride; he was aged just 24 and was the last Danish king to rule England.</p></div>
+</div>
+
+<div class="dynastylist"   id="saxons">
+<button type="button" class="dynasty">Saxons</button>
+
+
     <p class="monarch"> <a href="#">Edward the Confessor</a></p>
     <p class="monarch"> <a href="#">Harold II</a></p>
   </div>
@@ -177,7 +197,7 @@ $(document).ready(function(){
     <p class="monarch"> <a href="#">George VI</a></p>
     <p class="monarch"> <a href="#">Elizabeth II</a></p>
   </div>
-
+</div>
 
 </body>
 </html>
