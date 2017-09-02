@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="./monarchs.css">
+
+<script>
+$(document).ready(function(){
+
+  $('.monarch').hide();
+  $('.bio').hide();
+
+
+  $('.dynastylist').click(function() {
+    if( $(this).children('.monarch').is(":hidden") ) {
+        $(this).children('.monarch').show();
+    }
+    else
+    {
+      $(this).children('.monarch').hide();
+    }
+  });
+});
+</script>
+
+<script>
+
+$(document).ready(function(){
+  $('button').hover(function(){
+    $(this).css('background-color', '#1b599b');
+  }, function(){
+    $(this).css('background-color', '#10365e');
+  });
+});
+</script>
+
+
+<script>
+
+$(document).ready(function(){
+  $('#alfred').click(function() {
+    if( $("#alfredthegreat").is(":hidden") ) {
+      $("#alfredthegreat").show();
+    }
+    else
+    {
+      $("#alfredthegreat").hide();
+    }
+  });
+});
+</script>
+</head>
+<body>
+
+  <h1>The British Monarchy</h1>
+  <div class="dynastylist" id="wessex">
+    <button type="button" class="dynasty">House of Wessex</button>
+    <p class="monarch" id="egbert"> <a href="#">Egbert</a></p>
+    <p class="monarch"> <a href="#">Aethelwulf</a></p>
+    <p class="monarch"> <a href="#">Aethelbald</a></p>
+    <p class="monarch"> <a href="#">Aethelberht</a></p>
+    <p class="monarch"> <a href="#">Aethelred I</a></p>
+    <p class="monarch">
+      <a href="#" id="alfred">Alfred the Great</a>
+      <span class='bio' id="alfredthegreat">Stuff about alfred.</span>
+    </p>
+    <p class="monarch"> <a href="#">Edward the Elder</a></p>
+    <p class="monarch"> <a href="#">Athelstan</a></p>
+    <p class="monarch"> <a href="#">Edmund the Magnificent</a></p>
+    <p class="monarch"> <a href="#">Eadred</a></p>
+    <p class="monarch"> <a href="#">Eadwig All-Fair</a></p>
+    <p class="monarch"> <a href="#">Edgar the Peaceable</a></p>
+    <p class="monarch"> <a href="#">Aethelred II (Ethelred the Unready)</a></p>
+    <p class="monarch"> <a href="#">Edmund II</a></p>
+  </div>
+
+  <div class="dynastylist"  id="danish">
+    <button type="button" class="dynasty">Danish</button>
+    <p class="monarch"> <a href="#">Svein Forkbeard</a></p>
+    <p class="monarch"> <a href="#">Cnut</a></p>
+    <p class="monarch"> <a href="#">Harold I</a></p>
+    <p class="monarch"> <a href="#">Hardicnut</a></p>
+  </div>
+
+  <div class="dynastylist"   id="saxons">
+    <button type="button" class="dynasty">Saxons</button>
+    <p class="monarch"> <a href="#">Edward the Confessor</a></p>
+    <p class="monarch"> <a href="#">Harold II</a></p>
+  </div>
+
+  <div class="dynastylist" id="normans">
+    <button type="button" class="dynasty" >Normans</button>
+    <p class="monarch"> <a href="#">William I</a></p>
+    <p class="monarch"> <a href="#">William II</a></p>
+    <p class="monarch"> <a href="#">Henry I</a></p>
+    <p class="monarch"> <a href="#">Stephen</a></p>
+    <p class="monarch"> <a href="#">Matilda</a></p>
+  </div>
+
+  <div class="dynastylist"  id="plantagenets">
+    <button type="button" class="dynasty">Plantagenets</button>
+    <p class="monarch"> <a href="#">Henry II</a></p>
+    <p class="monarch"> <a href="#">Richard I</a></p>
+    <p class="monarch"> <a href="#">John</a></p>
+    <p class="monarch"> <a href="#">Henry III</a></p>
+    <p class="monarch"> <a href="#">Edward I</a></p>
+    <p class="monarch"> <a href="#">Edward II</a></p>
+    <p class="monarch"> <a href="#">Edward III</a></p>
+    <p class="monarch"> <a href="#">Richard II</a></p>
+  </div>
+
+  <div class="dynastylist"  id="lancaster">
+    <button type="button" class="dynasty" >House of Lancaster</button>
+    <p class="monarch"> <a href="#">Henry IV</a></p>
+    <p class="monarch"> <a href="#">Henry V</a></p>
+    <p class="monarch"> <a href="#">Henry VI</a></p>
+  </div>
+
+  <div class="dynastylist"  id="york">
+    <button type="button" class="dynasty">House of York</button>
+    <p class="monarch"> <a href="#">Edward IV</a></p>
+    <p class="monarch"> <a href="#">Edward V</a></p>
+    <p class="monarch"> <a href="#">Richard III</a></p>
+  </div>
+
+  <div class="dynastylist"  id="tudors">
+    <button type="button" class="dynasty">Tudors</button>
+    <p class="monarch"> <a href="#">Henry VII</a></p>
+    <p class="monarch"> <a href="#">Henry VIII</a></p>
+    <p class="monarch"> <a href="#">Edward VI</a></p>
+    <p class="monarch"> <a href="#">Jane Grey</a></p>
+    <p class="monarch"> <a href="#">Mary I</a></p>
+    <p class="monarch"> <a href="#">Elizabeth I</a></p>
+  </div>
+
+  <div class="dynastylist"   id="stuarts">
+    <button type="button" class="dynasty">Stuarts</button>
+    <p class="monarch"> <a href="#">James I (and VI)</a></p>
+    <p class="monarch"> <a href="#">Charles I</a></p>
+  </div>
+
+  <div class="dynastylist"   id="commonwealth">
+    <button type="button" class="dynasty" >Commonwealth</button>
+    <p class="monarch"> <a href="#">Oliver Cromwell</a></p>
+    <p class="monarch"> <a href="#">Richard Cromwell</a></p>
+  </div>
+
+  <div class="dynastylist"  id="stuarts-restored">
+    <button type="button" class="dynasty">Stuarts (restored)</button>
+    <p class="monarch"> <a href="#">Charles II</a></p>
+    <p class="monarch"> <a href="#">James II</a></p>
+    <p class="monarch"> <a href="#">William III and Mary II</a></p>
+    <p class="monarch"> <a href="#">Anne</a></p>
+  </div>
+
+  <div class="dynastylist"  id="hanover">
+    <button type="button" class="dynasty">House of Hanover</button>
+    <p class="monarch"> <a href="#">George I</a></p>
+    <p class="monarch"> <a href="#">George II</a></p>
+    <p class="monarch"> <a href="#">George III</a></p>
+    <p class="monarch"> <a href="#">George IV</a></p>
+    <p class="monarch"> <a href="#">William IV</a></p>
+    <p class="monarch"> <a href="#">Victoria I</a></p>
+  </div>
+
+  <div class="dynastylist"  id="scg">
+    <button type="button" class="dynasty" >Saxe-Coburg-Gotha</button>
+    <p class="monarch"> <a href="#">Edward VII</a></p>
+  </div>
+
+  <div class="dynastylist"  id="windsor">
+    <button type="button" class="dynasty" >Windsor</button>
+    <p class="monarch"> <a href="#">George V</a></p>
+    <p class="monarch"> <a href="#">Edward VIII</a></p>
+    <p class="monarch"> <a href="#">George VI</a></p>
+    <p class="monarch"> <a href="#">Elizabeth II</a></p>
+  </div>
+
+
+</body>
+</html>

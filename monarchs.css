@@ -1,0 +1,24 @@
+body {
+  background-color: #3574b7;
+}
+
+button {
+  background-color: #10365e;
+  border-style: none;
+  border-radius: 5px;
+  width: 300px;
+  height: 40px;
+  color: white;
+  margin: 20px;
+}
+
+a {
+  margin: 10px 0px 10px 50px;
+  padding: 10px;
+  color: white;
+}
+
+h1 {
+  color: white;
+  margin-left: 20px;
+}
