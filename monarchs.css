@@ -22,3 +22,22 @@ h1 {
   color: white;
   margin-left: 20px;
 }
+
+.left {
+  width: 100px;
+  height: 2000px;
+  background-image: url("./flags.png");
+  display: inline-block;
+  vertical-align: top;
+}
+
+#center {
+  display: inline-block;
+}  
+
+.bio {
+  width: 300px;
+  margin-left: 20px;
+  color: white;
+  font-style: italic;
+}
